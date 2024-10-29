@@ -36,9 +36,9 @@ body {
   
   .main ul {
     margin: auto;
-    padding: 20px 0 0;
+    padding: 25px 0 0;
     list-style: none;
-    text-align: right;
+    text-align: center;
   }
   
   .main ul li {
@@ -50,7 +50,7 @@ body {
   
   .main ul li a {
     color: black;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
@@ -87,19 +87,9 @@ body {
     color: #ffffff; 
     padding: 20px;
   }
-  
-  
-  .swiper-pagination-bullet {
-    width: 6px !important;
-    height: 6px !important;
-    border-radius: 0.2rem !important;
-    background: var(--bg-color) !important;
-    opacity: 1 !important;
+
+  .homecar
+  {
+  width: 100px;
+  height: 100px;
   }
-  
-  .swiper-pagination-bullet-active {
-    width: 1.5rem !important;
-    background: var(--main-color) !important;
-  }
-  
-  
