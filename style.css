@@ -1,8 +1,11 @@
 body {
-    background-color: white !important; 
-    color: #ffffff; 
-    margin: 0;
-    padding: 0;
+  background:
+  radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%),
+  radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%),
+  radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%),
+  radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%),
+  radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%) !important;
+background-blend-mode:screen !important;
   }
   
   
@@ -38,29 +41,34 @@ body {
     margin: auto;
     padding: 25px 0 0;
     list-style: none;
-    text-align: center;
-  }
-  
-  .main ul li {
-    float: none;
-    display: inline-block;
-  }
-  
-  
-  
-  .main ul li a {
-    color: Black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-links {
+    display: flex;
+    gap: 30px;
+}
+
+.quote-link {
+    margin-left: auto; 
+}
+
+.main ul li a {
+    color: black;
     font-size: 25px;
     font-weight: bolder;
     padding: 10px 30px;
-  }
-  
-  .main ul li a:hover {
+    text-decoration: none; 
+}
+
+.main ul li a:hover {
     transition: 1s;
     background-color: gray;
     border-radius: 10px;
     color: black;
-  }
+}
   
   
   .btn {
@@ -84,21 +92,28 @@ body {
     padding: 20px;
   }
   
-  .box {
-    background: #191414;
-    border-radius: 10px;
-    padding: 10px;
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-    padding-left: 200px;
-  }
+  .box-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
-  .box .box-img img:hover {
-    transform: translateY(-10px);
+.box-img img {
+    max-width: 100%;
+    height: auto;
+    transition: 0.2s all linear;
+}
+
+.box-img img:hover {
+    transform: translateY(-16px); 
     transition: 0.2s all linear;
     
   }
+
+  html {
+    scroll-behavior: smooth;
+}
 
   /* Music */
   .card {
